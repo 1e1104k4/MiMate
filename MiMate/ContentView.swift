@@ -19,6 +19,22 @@ struct ContentView: View {
         }
         .padding()
     }
+    
+    func fetchUsers() async {
+        guard users.isEmpty else { return } // dont refetch data if have
+        
+        do {
+            let url = URL(string: "https://www.hackingwithswift.com/samples/friendface.json")!
+            let (data, _) = try await URLSession.shared.data(from: url)
+            
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .iso8601
+            users = try decoder.decode([User].self, from: data)
+            
+        } catch {
+            print("Download failed")
+        }
+    }
 }
 
 #Preview {
