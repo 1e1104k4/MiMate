@@ -13,6 +13,7 @@
 		2E94E0F42B7E901A00E41552 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E94E0F32B7E901A00E41552 /* Preview Assets.xcassets */; };
 		2E94E0FB2B7E920E00E41552 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94E0FA2B7E920E00E41552 /* User.swift */; };
 		2E94E0FD2B7EA18A00E41552 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94E0FC2B7EA18A00E41552 /* Friend.swift */; };
+		2E94E0FF2B7EEDAB00E41552 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94E0FE2B7EEDAB00E41552 /* UserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		2E94E0F32B7E901A00E41552 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2E94E0FA2B7E920E00E41552 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2E94E0FC2B7EA18A00E41552 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		2E94E0FE2B7EEDAB00E41552 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				2E94E0EC2B7E901900E41552 /* MiMateApp.swift */,
 				2E94E0EE2B7E901900E41552 /* ContentView.swift */,
+				2E94E0FE2B7EEDAB00E41552 /* UserView.swift */,
 				2E94E0FA2B7E920E00E41552 /* User.swift */,
 				2E94E0FC2B7EA18A00E41552 /* Friend.swift */,
 				2E94E0F02B7E901A00E41552 /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 			files = (
 				2E94E0EF2B7E901900E41552 /* ContentView.swift in Sources */,
 				2E94E0ED2B7E901900E41552 /* MiMateApp.swift in Sources */,
+				2E94E0FF2B7EEDAB00E41552 /* UserView.swift in Sources */,
 				2E94E0FB2B7E920E00E41552 /* User.swift in Sources */,
 				2E94E0FD2B7EA18A00E41552 /* Friend.swift in Sources */,
 			);
