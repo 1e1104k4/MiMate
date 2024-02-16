@@ -11,13 +11,25 @@ struct ContentView: View {
     @State private var users = [User]()
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List(users) { user in
+                NavigationLink(value: user) {
+                    HStack {
+                        Circle()
+                            .fill(user.isActive ? .blue : .gray)
+                            .frame(width: 15)
+                        Text(user.name)
+                    }
+                }
+            }
+            .navigationTitle("MiMate")
+            .navigationDestination(for: User.self) { user in
+                Text(user.name)
+            }
+            .task {
+                await fetchUsers()
+            }
         }
-        .padding()
     }
     
     func fetchUsers() async {
