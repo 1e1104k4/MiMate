@@ -5,10 +5,11 @@
 //  Created by Leila on 2/15/24.
 //
 
+import SwiftData
 import SwiftUI
 
 struct ContentView: View {
-    @State private var users = [User]()
+    @Query(sort: \User.name) private var users: [User]
     
     var body: some View {
         NavigationStack {
